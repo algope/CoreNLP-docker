@@ -14,6 +14,7 @@ RUN unzip stanford-corenlp-full-2018-01-31.zip && \
 WORKDIR stanford-corenlp-full-2018-01-31
 
 RUN wget http://nlp.stanford.edu/software/stanford-corenlp-models-current.jar
+RUN wget http://nlp.stanford.edu/software/stanford-english-corenlp-models-current.jar
 
 RUN export CLASSPATH="`find . -name '*.jar'`"
 
