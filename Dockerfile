@@ -22,4 +22,4 @@ ENV PORT 9000
 
 EXPOSE $PORT
 
-CMD java -cp "*" -mx8g edu.stanford.nlp.pipeline.StanfordCoreNLPServer -annotators tokenize, cleanxml, ssplit, pos, lemma, ner, regexner, sentiment, truecase, parse, depparse, dcoref, relation, natlog, quote
+CMD java -cp "*" -mx10g edu.stanford.nlp.pipeline.StanfordCoreNLPServer -annotators tokenize, cleanxml, ssplit, pos, lemma, ner, regexner, sentiment, truecase, parse, depparse, dcoref, relation, natlog, quote
